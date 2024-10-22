@@ -1,4 +1,5 @@
 class Cylinder{
+
     private int radius ;
     private int height;
 
@@ -30,7 +31,6 @@ class Cylinder{
         this.radius = r;
         this.height = h;
     }
-
 }
 
 class RectangleArea{
@@ -65,6 +65,27 @@ class RectangleArea{
     }
 }
 
+class Sphere{
+    int radius;
+
+    public void setRadius(int r){
+        radius = r;
+    }
+    public int getRadius(){
+        return  radius;
+    }
+
+    public Sphere(int r){
+        this.radius = r;
+
+    }
+
+    public double SurfaceAreaOfSphere(){
+        return 4*Math.PI*radius*radius*radius;
+    }
+
+}
+
 public class practiceque2 {
     public static void main(String[] args) {
 
@@ -96,14 +117,19 @@ public class practiceque2 {
 
         // practice que 4 
 
-        RectangleArea r = new RectangleArea(4, 5);
+        // RectangleArea r = new RectangleArea(4, 5);
 
-        System.out.println(r.getBreath());
-        System.out.println(r.getLength());
-        System.out.println(r.AreaofRectangle());
+        // System.out.println(r.getBreath());
+        // System.out.println(r.getLength());
+        // System.out.println(r.AreaofRectangle());
 
 
-      
+
+        // practice que 5
+
+        Sphere s = new Sphere(4);
+        double ans = s.SurfaceAreaOfSphere();
+        System.out.println(ans);
 
     }
     
