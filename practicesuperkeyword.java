@@ -6,7 +6,7 @@ class Super{
     }
     // constructor overloading
     Super(int i){
-        System.out.println(i);
+        x = i;
     }
 }
 class Sub extends Super{
@@ -18,14 +18,19 @@ class Sub extends Super{
     // constructor overloading
     Sub(int i , int j){
         super(i);
-        System.out.println(j);
+        y = j;
     }
 }
+
+
 
 public class practicesuperkeyword {
     public static void main(String[] args) {
         // Sub sub = new Sub();   
         
         Sub sub = new Sub(10,20);
+        System.out.println(sub.x);
+        System.out.println(sub.y);
     }
+    
 }
